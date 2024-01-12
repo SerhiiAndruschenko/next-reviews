@@ -4,7 +4,7 @@ import { exo2, orbitron } from "./fonts";
 import "./globals.css";
 import "@/public/styles/header.scss";
 import "@/public/styles/footer.scss";
-
+import '@/public/styles/reviews.scss';
 
 
 

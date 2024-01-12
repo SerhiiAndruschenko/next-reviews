@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <>
       <Heading>Indie Gamer</Heading>
-      <div className="border rounded hover:shadow-lg bg-slate-200">
+      <div className="post-card border rounded hover:shadow-lg bg-slate-200">
         <Link
           className="flex flex-col items-center sm:flex-row"
           href={`/reviews/${featuredReview.slug}`}
@@ -17,11 +17,11 @@ export default async function Home() {
             src={featuredReview.image}
             className="rounded-t w-full sm:w-96"
           />
-          <div className="py-2 px-4">
-            <h2 className="font-semibold font-orbitron text-center sm:text-left">
+          <div className="post-card__content">
+            <h2 className="font-semibold font-orbitron text-left">
               {featuredReview.title}
             </h2>
-            <p className="font-exo2 text-center sm:text-left">
+            <p className="font-exo2 text-left">
               {featuredReview.excerpt}
             </p>
           </div>
