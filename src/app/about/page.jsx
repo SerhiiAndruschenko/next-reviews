@@ -1,5 +1,6 @@
 import Heading from "@/src/components/Heading";
 import '@/public/styles/about.scss';
+import ContactForm from "@/src/components/ContactForm";
 
 
 export const metadata = {
@@ -34,9 +35,12 @@ export default function AboutPage() {
           reach out to us at{" "}
           <a href="mailto:contact@indiegamereviews.com">
             contact@indiegamereviews.com
-          </a>
-          .
+          </a>.
+         
         </p>
+
+        <ContactForm />
+
       </div>
     </>
   );
