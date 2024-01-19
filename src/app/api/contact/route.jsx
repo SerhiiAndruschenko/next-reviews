@@ -10,7 +10,7 @@ export async function POST(request) {
     // Configure nodemailer with your email service credentials
     const transporter = nodemailer.createTransport({
       host: "mail.adm.tools",
-      port: 25,
+      port: 465,
       tls: {
         ciphers: "SSLv3",
         rejectUnauthorized: false,
