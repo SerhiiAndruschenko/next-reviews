@@ -28,7 +28,7 @@ export default async function ReviewsPage() {
                 <h2 className="font-semibold font-orbitron text-left">
                   {review.title}
                 </h2>
-                <p className="font-exo2 text-left">{review.excerpt}</p>
+                <span className="font-exo2 text-left" dangerouslySetInnerHTML={{ __html: review.excerpt }} />
               </div>
             </Link>
           </li>
