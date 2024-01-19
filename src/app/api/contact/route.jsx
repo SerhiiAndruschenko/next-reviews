@@ -9,16 +9,22 @@ export async function POST(request) {
     console.log(name);
     // Configure nodemailer with your email service credentials
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "mail.adm.tools",
+      port: 25,
+      tls: {
+        ciphers: "SSLv3",
+        rejectUnauthorized: false,
+      },
+
       auth: {
-        user: "andruschenko033@gmail.com",
-        pass: "Nothingistruth23698741",
+        user: "noreply@testapp.fun",
+        pass: "sJsSY7e884",
       },
     });
 
     // Set up email data
     const mailOptions = {
-      from: "andruschenko033@gmail.com",
+      from: "noreply@testapp.fun",
       to: "serg.web@acceptance.ltd", // Change to your recipient's email
       subject: "New Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
