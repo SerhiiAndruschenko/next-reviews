@@ -34,7 +34,7 @@ const ContactForm = () => {
           },
           body: JSON.stringify(values),
         });
-        console.log(response);
+        console.log(JSON.stringify(values));
         if (response.ok) {
           // Reset the form and display a success message
           formik.resetForm();
