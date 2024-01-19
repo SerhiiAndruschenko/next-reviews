@@ -1,10 +1,9 @@
 import Heading from "@/src/components/Heading";
-import '@/public/styles/about.scss';
+import "@/public/styles/about.scss";
 import ContactForm from "@/src/components/ContactForm";
 
-
 export const metadata = {
-  title: "About",
+  title: "About Us",
 };
 
 export default function AboutPage() {
@@ -14,33 +13,34 @@ export default function AboutPage() {
 
       <div className="about-content font-exo2">
         <p>
-          Welcome to Indie Game Reviews, where we explore and share our thoughts
-          on the latest indie games in the gaming world. Our team of passionate
-          gamers is dedicated to providing honest and insightful reviews to help
-          you discover hidden gems among indie titles.
+          Welcome to Bookworm Haven, your go-to destination for insightful and
+          comprehensive book reviews. Here at Bookworm Haven, our avid team of
+          readers is passionate about delving into the literary world and
+          sharing our thoughts on the latest and greatest books.
         </p>
 
         <h2>Our Mission</h2>
         <p>
-          At Indie Game Reviews, our mission is to celebrate the creativity and
-          innovation found in independent games. We believe in supporting indie
-          developers and showcasing their unique contributions to the gaming
-          industry. Whether you're a seasoned gamer or new to indie titles, we
-          strive to guide you toward exciting and memorable gaming experiences.
+          At Bookworm Haven, our mission is to celebrate the diverse world of
+          literature by shining a spotlight on both established and emerging
+          authors. We believe in the power of storytelling and aim to provide
+          readers with thoughtful and honest reviews that help you navigate the
+          vast realm of books. Whether you're a bibliophile with an extensive
+          collection or a casual reader looking for your next page-turner, we're
+          here to guide you to literary treasures.
         </p>
 
         <h2>Contact Us</h2>
         <p>
-          Have a suggestion, question, or want to collaborate? Feel free to
-          reach out to us at{" "}
-          <a href="mailto:contact@indiegamereviews.com">
-            contact@indiegamereviews.com
-          </a>.
-         
+          Have a book recommendation, a burning question, or interested in
+          collaboration? Feel free to connect with us at{" "}
+          <a href="mailto:contact@bookwormhaven.com">
+            contact@bookwormhaven.com
+          </a>
+          .
         </p>
 
         <ContactForm />
-
       </div>
     </>
   );

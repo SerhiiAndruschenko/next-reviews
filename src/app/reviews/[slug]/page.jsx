@@ -26,6 +26,7 @@ export default async function ReviewPage({ params: { slug } }) {
           className="mb-4 rounded w-full sm:w-4/12"
         />
         <div className="w-full sm:w-8/12">
+        <p className="font-exo2 text-left mb-2">{review.author}</p>
           <Heading>{review.title}</Heading>
           <p className="italic pb-3">{review.date}</p>
           <ShareLinkButton />

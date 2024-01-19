@@ -12,10 +12,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: 'Indie Gamer',
-    template: '%s | Indie Gamer'
+    default: 'Bookworm Haven',
+    template: '%s | Bookworm Haven'
   },
-  description: 'Only the best indie games, reviewed for you'
+  description: 'Only the best books, reviewed for you'
 }
 
 export default function RootLayout({ children }) {
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         </header>
         <main className="grow px-4 py-14">{children}</main>
         <footer className="px-4 py-3 text-center text-xs">
-          Game data and images courtesy of <a href="https://rawg.io/">RAWG</a>
+          All Rights Reserved. © 2024
         </footer>
         <SpeedInsights />
       </body>

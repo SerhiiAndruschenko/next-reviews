@@ -5,13 +5,11 @@ const NavBar = () => {
     <nav className="w-full">
       <ul className="w-full flex gap-x-6">
         <li>
-          <Link className="font-orbitron font-bold" href={"/"}>Indie Gamer</Link>
+          <Link className="font-orbitron font-bold" href={"/"}>Bookworm Haven</Link>
         </li>
+
         <li className="ml-auto">
-          <Link href={"/reviews"}>Reviews</Link>
-        </li>
-        <li>
-          <Link href={"/about"}>About</Link>
+          <Link href={"/about"}>About Us</Link>
         </li>
       </ul>
     </nav>
