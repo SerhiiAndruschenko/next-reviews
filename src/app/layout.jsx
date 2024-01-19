@@ -5,7 +5,7 @@ import "./globals.css";
 import "@/public/styles/header.scss";
 import "@/public/styles/footer.scss";
 import '@/public/styles/reviews.scss';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
         <footer className="px-4 py-3 text-center text-xs">
           Game data and images courtesy of <a href="https://rawg.io/">RAWG</a>
         </footer>
+        <SpeedInsights />
       </body>
     </html>
   );
