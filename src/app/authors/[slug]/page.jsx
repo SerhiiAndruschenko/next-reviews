@@ -1,16 +1,21 @@
 import Link from "next/link";
 import Heading from "@/src/components/Heading";
-import { getReviews } from "@/lib/reviews";
+import { getAuthorReviews, getAuthorNameBySlug } from "@/lib/reviews";
 
-/*export const metadata = {
-  title: "Reviews",
-};*/
 
-export default async function ReviewsPage() {
-  const reviews = await getReviews();
+export async function generateMetadata({ params: { slug } }) {
+  const authorName = await getAuthorNameBySlug(slug);
+  return {
+    title: authorName,
+  }
+}
+
+export default async function AuthorPage({ params: { slug } }) {
+  const reviews = await getAuthorReviews(slug);
+  const authorName = await getAuthorNameBySlug(slug);
   return (
     <>
-      <Heading>Reviews</Heading>
+      <Heading>{authorName}</Heading>
       <ul className="flex flex-col gap-4">
         {reviews.map((review) => (
           <li
