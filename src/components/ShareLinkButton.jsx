@@ -14,7 +14,7 @@ export default function ShareLinkButton() {
   };
 
   return (
-    <button onClick={handleClick}>
+    <button className="font-gentium" onClick={handleClick}>
       {clicked ? "Link copied" : "Share Link"}
     </button>
   );

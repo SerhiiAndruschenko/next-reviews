@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import NavBar from "@/src/components/NavBar";
-import { exo2, orbitron } from "./fonts";
+import { exo2, orbitron, gentium } from "./fonts";
 import "./globals.css";
 import "@/public/styles/header.scss";
 import "@/public/styles/footer.scss";
@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${orbitron.variable} ${exo2.variable}` }>
+    <html lang="en" className={`${orbitron.variable} ${exo2.variable} ${gentium.variable}` }>
       <body className="flex flex-col min-h-screen bg-">
         <Analytics />
         <header className="px-4 py-3 mx-auto">

@@ -23,12 +23,12 @@ export default async function ReviewsPage() {
             >
               <img src={review.image} className="rounded-t w-full sm:w-96" />
               <div className="post-card__content">
-                <p className="font-exo2 text-left mb-2">{review.author}</p>
+                <p className="font-gentium text-left mb-2">{review.author}</p>
 
-                <h2 className="font-semibold font-orbitron text-left">
+                <h2 className="font-gentium text-left">
                   {review.title}
                 </h2>
-                <span className="font-exo2 text-left" dangerouslySetInnerHTML={{ __html: review.excerpt }} />
+                <span className="font-gentium text-left" dangerouslySetInnerHTML={{ __html: review.excerpt }} />
               </div>
             </Link>
           </li>

@@ -55,7 +55,7 @@ const ContactForm = () => {
       <h2>Or use form below:</h2>
       <form className="contact__from" onSubmit={formik.handleSubmit}>
         <div className="contact__left">
-          <div className="input-wrap">
+          <div className="input-wrap ">
             <input
               type="text"
               id="name"

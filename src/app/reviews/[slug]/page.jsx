@@ -26,16 +26,16 @@ export default async function ReviewPage({ params: { slug } }) {
           className="mb-4 rounded w-full sm:w-4/12"
         />
         <div className="w-full sm:w-8/12">
-        <p className="font-exo2 text-left mb-2">{review.author}</p>
+        <p className="font-gentium text-left mb-2">{review.author}</p>
           <Heading>{review.title}</Heading>
-          <p className="italic pb-3">{review.date}</p>
+          <p className="italic font-gentium pb-3">{review.date}</p>
           <ShareLinkButton />
         </div>
       </div>
 
       <article
         dangerouslySetInnerHTML={{ __html: review.body }}
-        className="w-full font-exo2 prose prose-slate max-w-none"
+        className="w-full font-gentium prose prose-slate max-w-none"
       />
     </>
   );

@@ -1,8 +1,15 @@
-import { Orbitron, Exo_2 } from "next/font/google";
+import { Orbitron, Exo_2, Gentium_Book_Plus } from "next/font/google";
 
 export const orbitron = Orbitron({
     subsets: ['latin'],
     variable: '--font-orbitron',
+});
+
+export const gentium = Gentium_Book_Plus({
+    subsets: ['latin'],
+    variable: '--font-gentium',
+    weight: ['400', '700'], // Specify available weights
+    fallback: 'serif',
 });
 
 export const exo2 = Exo_2({
