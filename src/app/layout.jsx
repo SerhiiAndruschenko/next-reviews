@@ -6,7 +6,7 @@ import "@/public/styles/header.scss";
 import "@/public/styles/footer.scss";
 import '@/public/styles/reviews.scss';
 import { Analytics } from '@vercel/analytics/react';
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
         <footer className="px-4 py-3 text-center text-xs">
           All Rights Reserved. © 2024
         </footer>
+        <SpeedInsights />
       </body>
     </html>
   );

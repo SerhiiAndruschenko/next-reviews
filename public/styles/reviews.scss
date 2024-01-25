@@ -74,3 +74,13 @@
         color: #000;
     }
 }
+
+.animated-element {
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+	transform: translateY(50px);
+	&.fade-in {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
