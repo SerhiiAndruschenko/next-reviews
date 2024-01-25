@@ -3,7 +3,6 @@ import { getReview, getSlugs } from "@/lib/reviews";
 import ShareLinkButton from "@/src/components/ShareLinkButton";
 import Link from "next/link";
 import AnimatedElement from "@/src/components/AnimatedElement";
-import Image from "next/image";
 
 export async function generateStaticParams() {
   const slugs = await getSlugs();
@@ -25,32 +24,39 @@ export default async function ReviewPage({ params: { slug } }) {
     <>
       <div className="article-head flex flex-col gap-x-9 justify-between items-center mb-9 sm:flex-row">
         <div className="mb-4 rounded w-full sm:w-4/12">
-          <img
-            width={484}
-            height={312}
-            alt={review.title}
-            src={review.image}
-          />
+          <AnimatedElement>
+            <img
+              width={484}
+              height={312}
+              alt={review.title}
+              src={review.image}
+            />
+          </AnimatedElement>
         </div>
         <div className="w-full sm:w-8/12">
-          <Link
-            className="font-gentium"
-            href={`/authors/${review.author.slug}`}
-          >
-            {review.author.name}
-          </Link>
+          <AnimatedElement>
+            <Link
+              className="font-gentium"
+              href={`/authors/${review.author.slug}`}
+            >
+              {review.author.name}
+            </Link>
+          </AnimatedElement>
 
           <Heading>{review.title}</Heading>
-
-          <p className="italic font-gentium pb-3">{review.date}</p>
-          <ShareLinkButton />
+          <AnimatedElement>
+            <p className="italic font-gentium pb-3">{review.date}</p>
+            <ShareLinkButton />
+          </AnimatedElement>
         </div>
       </div>
 
-      <article
-        dangerouslySetInnerHTML={{ __html: review.body }}
-        className="w-full font-gentium prose prose-slate max-w-none"
-      />
+      <AnimatedElement>
+        <article
+          dangerouslySetInnerHTML={{ __html: review.body }}
+          className="w-full font-gentium prose prose-slate max-w-none"
+        />
+      </AnimatedElement>
     </>
   );
 }
