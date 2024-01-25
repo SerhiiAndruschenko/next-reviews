@@ -25,32 +25,32 @@ export default async function ReviewPage({ params: { slug } }) {
     <>
       <div className="article-head flex flex-col gap-x-9 justify-between items-center mb-9 sm:flex-row">
         <div className="mb-4 rounded w-full sm:w-4/12">
-          <AnimatedElement>
-            <Image width={484} height={312} alt={review.title} src={review.image} />
-          </AnimatedElement>
+          <Image
+            width={484}
+            height={312}
+            alt={review.title}
+            src={review.image}
+          />
         </div>
         <div className="w-full sm:w-8/12">
-          <AnimatedElement>
-            <Link
-              className="font-gentium"
-              href={`/authors/${review.author.slug}`}
-            >
-              {review.author.name}
-            </Link>
-          </AnimatedElement>
+          <Link
+            className="font-gentium"
+            href={`/authors/${review.author.slug}`}
+          >
+            {review.author.name}
+          </Link>
+
           <Heading>{review.title}</Heading>
-          <AnimatedElement>
-            <p className="italic font-gentium pb-3">{review.date}</p>
-            <ShareLinkButton />
-          </AnimatedElement>
+
+          <p className="italic font-gentium pb-3">{review.date}</p>
+          <ShareLinkButton />
         </div>
       </div>
-      <AnimatedElement>
-        <article
-          dangerouslySetInnerHTML={{ __html: review.body }}
-          className="w-full font-gentium prose prose-slate max-w-none"
-        />
-      </AnimatedElement>
+
+      <article
+        dangerouslySetInnerHTML={{ __html: review.body }}
+        className="w-full font-gentium prose prose-slate max-w-none"
+      />
     </>
   );
 }

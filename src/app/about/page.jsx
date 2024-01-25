@@ -13,7 +13,7 @@ export default function AboutPage() {
       <Heading>About Us:</Heading>
 
       <div className="about-content font-gentium">
-        <AnimatedElement>
+        
           <p>
             Welcome to Bookworm Haven, your go-to destination for insightful and
             comprehensive book reviews. Here at Bookworm Haven, our avid team of
@@ -41,11 +41,11 @@ export default function AboutPage() {
             </a>
             .
           </p>
-        </AnimatedElement>
+        
 
-        <AnimatedElement>
+        
           <ContactForm />
-        </AnimatedElement>
+        
       </div>
     </>
   );
