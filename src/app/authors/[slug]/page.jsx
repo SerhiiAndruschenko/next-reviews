@@ -2,6 +2,7 @@ import Link from "next/link";
 import Heading from "@/src/components/Heading";
 import { getAuthorReviews, getAuthorNameBySlug } from "@/lib/reviews";
 import AnimatedElement from "@/src/components/AnimatedElement";
+import Image from "next/image";
 
 export async function generateMetadata({ params: { slug } }) {
   const authorName = await getAuthorNameBySlug(slug);
@@ -24,7 +25,7 @@ export default async function AuthorPage({ params: { slug } }) {
                 className="flex flex-col items-center sm:flex-row post-card border rounded bg-slate-200 hover:shadow-lg"
                 href={`/reviews/${review.slug}`}
               >
-                <img src={review.image} className="rounded-t w-full sm:w-96" />
+                <Image width={384} height={248} alt={review.title} src={review.image} className="rounded-t w-full sm:w-96" />
                 <div className="post-card__content">
                   <p className="font-gentium text-left mb-2">
                     {review.author.name}

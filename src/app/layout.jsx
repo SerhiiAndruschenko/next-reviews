@@ -7,6 +7,7 @@ import "@/public/styles/footer.scss";
 import '@/public/styles/reviews.scss';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 

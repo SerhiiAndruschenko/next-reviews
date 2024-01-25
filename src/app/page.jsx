@@ -2,7 +2,7 @@ import Link from "next/link";
 import Heading from "@/src/components/Heading";
 import { getPagedReviews, getPageCount } from "@/lib/reviews";
 import AnimatedElement from "@/src/components/AnimatedElement";
-
+import Image from "next/image";
 /*export const metadata = {
   title: "Reviews",
 };*/
@@ -34,7 +34,7 @@ export default async function ReviewsPage({ searchParams }) {
                 className="flex flex-col items-center sm:flex-row post-card border rounded bg-slate-200 hover:shadow-lg"
                 href={`/reviews/${review.slug}`}
               >
-                <img src={review.image} className="rounded-t w-full sm:w-96" />
+                <Image width={384} height={248} alt={review.title} src={review.image} className="rounded-t w-full sm:w-96" />
                 <div className="post-card__content">
                   <p className="font-gentium text-left mb-2">
                     {review.author.name}
