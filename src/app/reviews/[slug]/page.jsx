@@ -25,7 +25,7 @@ export default async function ReviewPage({ params: { slug } }) {
     <>
       <div className="article-head flex flex-col gap-x-9 justify-between items-center mb-9 sm:flex-row">
         <div className="mb-4 rounded w-full sm:w-4/12">
-          <Image
+          <img
             width={484}
             height={312}
             alt={review.title}
