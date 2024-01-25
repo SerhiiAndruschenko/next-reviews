@@ -2,6 +2,7 @@ import Link from "next/link";
 import Heading from "@/src/components/Heading";
 import { getReviews } from "@/lib/reviews";
 import AnimatedElement from "@/src/components/AnimatedElement";
+import Image from "next/image";
 
 export const metadata = {
   title: "Reviews",
