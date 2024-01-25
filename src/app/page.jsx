@@ -23,16 +23,6 @@ export default async function ReviewsPage({ searchParams }) {
   return (
     <>
       <Heading>Reviews</Heading>
-      <div className="pagination flex gap-2 align-middle mt-3 mb-3">
-        {page >= 2 && <Link href={`/?page=${page - 1}`}>&lt;</Link>}
-
-        <span>Page {page}</span>
-        {page !== pageCount && (
-          <Link href={`/?page=${page + 1}`}>
-            &gt;
-          </Link>
-        )}
-      </div>
       <ul className="flex flex-col gap-4">
         {reviews.map((review) => (
           <li
@@ -59,6 +49,16 @@ export default async function ReviewsPage({ searchParams }) {
           </li>
         ))}
       </ul>
+
+      <div className="pagination">
+        {page >= 2 && <Link className="arrow" href={`/?page=${page - 1}`}>&laquo;</Link>}
+        {Array.from({ length: pageCount }, (_, index) => (
+          <Link className={(index + 1) == page ? 'active' : ''} key={index + 1} href={`/?page=${index + 1}`}>
+            {index + 1}
+          </Link>
+        ))}
+        {page !== pageCount && <Link className="arrow" href={`/?page=${page + 1}`}>&raquo;</Link>}
+      </div>
     </>
   );
 }

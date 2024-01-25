@@ -5,11 +5,30 @@
 }
 
 .pagination{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 40px;
+    gap:20px;
     span{
         color: #000;
     }
     a{
         color: #000;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.25rem;
+        &.active{
+            background-color: #000;
+            color: #fff;
+            pointer-events: none;
+        }
+        &.arrow{
+            width: auto;
+        }
     }
 }
 
