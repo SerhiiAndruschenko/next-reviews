@@ -36,8 +36,8 @@ export default function AboutPage() {
           <p>
             Have a book recommendation, a burning question, or interested in
             collaboration? Feel free to connect with us at{" "}
-            <a href="mailto:contact@bookwormhaven.com">
-              contact@bookwormhaven.com
+            <a href="mailto:contact@bookwormhaven.space">
+              contact@bookwormhaven.space
             </a>
             .
           </p>

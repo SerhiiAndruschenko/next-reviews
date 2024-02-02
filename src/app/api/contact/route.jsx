@@ -17,15 +17,15 @@ export async function POST(request) {
       },
 
       auth: {
-        user: "noreply@testapp.fun",
-        pass: "sJsSY7e884",
+        user: "noreply@bookwormhaven.space",
+        pass: "8pR2SbK7e7",
       },
     });
 
     // Set up email data
     const mailOptions = {
-      from: "noreply@testapp.fun",
-      to: "serg.web@acceptance.ltd", // Change to your recipient's email
+      from: "noreply@bookwormhaven.space",
+      to: "contact@bookwormhaven.space", // Change to your recipient's email
       subject: "New Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
