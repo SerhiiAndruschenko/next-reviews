@@ -3,9 +3,8 @@ import Heading from "@/src/components/Heading";
 import { getPagedReviews, getPageCount } from "@/lib/reviews";
 import AnimatedElement from "@/src/components/AnimatedElement";
 import Image from "next/image";
-/*export const metadata = {
-  title: "Reviews",
-};*/
+
+export const dynamic = 'force-dynamic';
 
 function parsePageParams(paramValue) {
   if (paramValue) {

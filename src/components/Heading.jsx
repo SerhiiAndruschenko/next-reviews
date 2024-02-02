@@ -9,3 +9,4 @@ const Heading = ({ children }) => {
 };
 
 export default Heading;
+
