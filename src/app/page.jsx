@@ -4,7 +4,7 @@ import { getPagedReviews, getPageCount } from "@/lib/reviews";
 import AnimatedElement from "@/src/components/AnimatedElement";
 import Image from "next/image";
 
-export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic';
 
 function parsePageParams(paramValue) {
   if (paramValue) {

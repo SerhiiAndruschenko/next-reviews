@@ -4,7 +4,7 @@ import { getAuthorReviews, getAuthorNameBySlug } from "@/lib/reviews";
 import AnimatedElement from "@/src/components/AnimatedElement";
 import Image from "next/image";
 
-export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params: { slug } }) {
   const authorName = await getAuthorNameBySlug(slug);

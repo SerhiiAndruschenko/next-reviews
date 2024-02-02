@@ -4,13 +4,13 @@ import ShareLinkButton from "@/src/components/ShareLinkButton";
 import Link from "next/link";
 import AnimatedElement from "@/src/components/AnimatedElement";
 
-export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic';
 
-/*export async function generateStaticParams() {
+export async function generateStaticParams() {
   const slugs = await getSlugs();
 
   return slugs.map((slug) => ({ slug }));
-}*/
+}
 
 export async function generateMetadata({ params: { slug } }) {
   const review = await getReview(slug);
