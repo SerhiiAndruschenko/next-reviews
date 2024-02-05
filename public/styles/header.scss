@@ -22,7 +22,17 @@ header {
 h1 {
   color: #000;
 }
-
+nav {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/*
 @media (min-width:1600px){
   nav {
     max-width: 1400px;
@@ -34,4 +44,4 @@ h1 {
     max-width: 1400px;
     margin: 0 auto;
   }
-}
+}*/
