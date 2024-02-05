@@ -13,10 +13,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: 'Bookworm Haven',
+    default: 'Bookworm Haven - Uncover Literary Treasures with Insightful Reviews',
     template: '%s | Bookworm Haven'
   },
-  description: 'Only the best books, reviewed for you'
+  description: 'Welcome to Bookworm Haven, where the magic of literature comes alive through our passionate team of avid readers. Dive into a world of insightful and comprehensive book reviews, as we celebrate the rich tapestry of both established and emerging authors. Our mission is to be your go-to destination for thoughtful and honest reviews, guiding bibliophiles and casual readers alike to discover the next captivating page-turner. Join us on a journey through the diverse realm of literature, and let Bookworm Haven be your trusted companion in exploring the endless possibilities of storytelling.'
 }
 
 export default function RootLayout({ children }) {
