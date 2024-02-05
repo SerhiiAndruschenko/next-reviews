@@ -15,21 +15,22 @@ export default function AboutPage() {
       <div className="about-content font-gentium">
         <AnimatedElement>
           <p>
-            Welcome to Bookworm Haven, your go-to destination for insightful and
-            comprehensive book reviews. Here at Bookworm Haven, our avid team of
-            readers is passionate about delving into the literary world and
-            sharing our thoughts on the latest and greatest books.
+            Welcome to Bookworm Haven, a personal blog where I share my insights
+            and in-depth reviews of the books I've read. Here at Bookworm Haven,
+            my passion for literature drives me to explore the literary world
+            and express my thoughts on both well-known and up-and-coming
+            authors.
           </p>
 
-          <h2>Our Mission</h2>
+          <h2>Mission Statement</h2>
           <p>
-            At Bookworm Haven, our mission is to celebrate the diverse world of
-            literature by shining a spotlight on both established and emerging
-            authors. We believe in the power of storytelling and aim to provide
-            readers with thoughtful and honest reviews that help you navigate
-            the vast realm of books. Whether you're a bibliophile with an
-            extensive collection or a casual reader looking for your next
-            page-turner, we're here to guide you to literary treasures.
+            At Bookworm Haven, my mission is to create a space that celebrates
+            the rich tapestry of literature. I focus on sharing genuine and
+            thoughtful reviews that cater to all readers, whether you're a
+            dedicated bibliophile with an extensive collection or a casual
+            reader in search of your next captivating story. Join me on this
+            literary journey as I guide you to hidden gems and well-loved
+            classics alike.
           </p>
 
           <h2>Contact Us</h2>
