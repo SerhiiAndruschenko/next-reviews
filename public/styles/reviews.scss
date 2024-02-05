@@ -1,6 +1,8 @@
 .reviews {
     h2{
-        //margin-top: 1em;
+        br{
+            display: none;
+        }
     }
 }
 
@@ -42,6 +44,7 @@
         font-weight: 700;
         color: #000;
         font-size: 24px;
+        
         @media (max-width:992px){
             font-size: 16px;
             margin-bottom: 10px;
@@ -58,7 +61,7 @@
         font-weight: 400;
         color: #000;
         @media (max-width:992px){
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 }
