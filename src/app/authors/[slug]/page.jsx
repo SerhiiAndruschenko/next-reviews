@@ -33,7 +33,7 @@ export default async function AuthorPage({ params: { slug } }) {
       </AnimatedElement>
 
       <AnimatedElement>
-        <h2 className="section-title font-bold text-2xl mb-4 font-gentium">Author books reviews</h2>
+        <h2 className="section-title font-bold text-2xl mb-4 font-gentium">Author's Bookshelf: Reviews</h2>
       </AnimatedElement>
 
       <ul className="flex flex-col gap-4">
