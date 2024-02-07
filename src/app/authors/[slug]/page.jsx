@@ -44,16 +44,10 @@ export default async function AuthorPage({ params: { slug } }) {
                 className="flex flex-col items-center sm:flex-row post-card border rounded bg-slate-200 hover:shadow-lg"
                 href={`/reviews/${review.slug}`}
               >
-                <img
-                  width={384}
-                  height={248}
-                  alt={review.title}
-                  src={review.image}
-                  className="rounded-t w-full sm:w-96"
-                />
+                <div className="post-card__image" style={{backgroundImage: `url(${review.image}`}}></div>
                 <div className="post-card__content">
                   <h2 className="font-gentium text-left">{review.title}</h2>
-                  <span
+                  <div
                     className="font-gentium text-left"
                     dangerouslySetInnerHTML={{ __html: review.excerpt }}
                   />
