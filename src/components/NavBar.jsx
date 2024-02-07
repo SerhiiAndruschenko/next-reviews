@@ -7,8 +7,10 @@ const NavBar = () => {
         <li>
           <Link className="font-gentium logo" href={"/"}>Bookworm Haven</Link>
         </li>
-
         <li className="ml-auto font-gentium">
+          <Link href={"/authors"}>Authors</Link>
+        </li>
+        <li className="font-gentium">
           <Link href={"/about"}>About Us</Link>
         </li>
       </ul>

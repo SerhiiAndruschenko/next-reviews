@@ -1,0 +1,43 @@
+main {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    @media (max-width:992px){
+      max-width: 100%;
+    }
+  }
+
+  .authors-row{
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+    @media (max-width:992px){
+        gap: 16px;
+    }
+    >div{
+        width: calc(25% - 23px);
+        @media (max-width:992px){
+            width: calc(50% - 8px);
+        }
+    }
+    a{
+        width: 100%;
+        padding: 30px;
+        gap:20px;
+        @media (max-width:992px){
+            padding: 15px;
+        }
+        img{
+            border-radius: 50%;
+        }
+        span{
+            font-weight: 700;
+            color: #000;
+            font-size: 24px;
+            text-align: center;
+            @media (max-width:992px){
+                font-size: 14px;
+            }
+        }
+    }
+  }
