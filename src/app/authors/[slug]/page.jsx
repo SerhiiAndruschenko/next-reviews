@@ -24,7 +24,7 @@ export default async function AuthorPage({ params: { slug } }) {
           <div className="author-info">
             <Heading>{author.name}</Heading>
 
-            <span
+            <div
               className="font-gentium text-left"
               dangerouslySetInnerHTML={{ __html: author.bio }}
             />
