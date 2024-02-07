@@ -1,24 +1,41 @@
 import Link from "next/link";
 import Heading from "@/src/components/Heading";
-import { getAuthorReviews, getAuthorNameBySlug } from "@/lib/reviews";
+import { getAuthorReviews, getAuthorBySlug } from "@/lib/reviews";
 import AnimatedElement from "@/src/components/AnimatedElement";
 import Image from "next/image";
 
 // export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params: { slug } }) {
-  const authorName = await getAuthorNameBySlug(slug);
+  const author = await getAuthorBySlug(slug);
   return {
-    title: authorName,
+    title: author.name,
   };
 }
 
 export default async function AuthorPage({ params: { slug } }) {
   const reviews = await getAuthorReviews(slug);
-  const authorName = await getAuthorNameBySlug(slug);
+  const author = await getAuthorBySlug(slug);
   return (
     <>
-      <Heading>{authorName}</Heading>
+      <AnimatedElement>
+        <div className="author-heading">
+          <img src={author.photo}></img>
+          <div className="author-info">
+            <Heading>{author.name}</Heading>
+
+            <span
+              className="font-gentium text-left"
+              dangerouslySetInnerHTML={{ __html: author.bio }}
+            />
+          </div>
+        </div>
+      </AnimatedElement>
+
+      <AnimatedElement>
+        <h2 className="section-title font-bold text-2xl mb-4 font-gentium">Author books reviews</h2>
+      </AnimatedElement>
+
       <ul className="flex flex-col gap-4">
         {reviews.map((review) => (
           <li key={review.slug}>
@@ -35,10 +52,6 @@ export default async function AuthorPage({ params: { slug } }) {
                   className="rounded-t w-full sm:w-96"
                 />
                 <div className="post-card__content">
-                  <p className="font-gentium text-left mb-2">
-                    {review.author.name}
-                  </p>
-
                   <h2 className="font-gentium text-left">{review.title}</h2>
                   <span
                     className="font-gentium text-left"
