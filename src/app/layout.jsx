@@ -8,6 +8,7 @@ import '@/public/styles/reviews.scss';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${orbitron.variable} ${exo2.variable} ${gentium.variable}` }>
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-6358243501215789" />
+      </Head>
       <body className="flex flex-col min-h-screen bg-">
         <Analytics />
         <header className="px-4 py-3 mx-auto">
