@@ -1,4 +1,4 @@
-import { Orbitron, Exo_2, Gentium_Book_Plus } from "next/font/google";
+import { Orbitron, Exo_2, Gentium_Book_Plus, MedievalSharp } from "next/font/google";
 
 export const orbitron = Orbitron({
     subsets: ['latin'],
@@ -15,4 +15,10 @@ export const gentium = Gentium_Book_Plus({
 export const exo2 = Exo_2({
     subsets: ['latin'],
     variable: '--font-exo2',
+});
+
+export const medievalSharp = MedievalSharp({
+    subsets: ['latin'],
+    weight: ['400'],
+    variable: '--font-medievalSharp',
 });

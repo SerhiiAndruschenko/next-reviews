@@ -10,7 +10,8 @@ module.exports = {
       fontFamily: {
         orbitron: ['var(--font-orbitron)', 'sans-serif'],
         gentium: ['var(--font-gentium)', 'serif'],
-        exo2: ['var(--font-exo2)', 'sans-serif']
+        exo2: ['var(--font-exo2)', 'sans-serif'],
+        medievalSharp: ['var(--font-medievalSharp)', 'sans-serif']
       }
     },
   },
