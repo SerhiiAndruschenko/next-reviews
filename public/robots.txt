@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.bookwormhaven.space/
+
+# Sitemaps
+Sitemap: https://www.bookwormhaven.space/sitemap.xml
