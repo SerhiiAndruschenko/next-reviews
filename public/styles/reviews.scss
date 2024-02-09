@@ -54,6 +54,9 @@
     align-items: center;
     margin-top: 40px;
     gap:20px;
+    @media (max-width:992px){
+        flex-wrap: wrap;
+    }
     span{
         color: #000;
     }
