@@ -29,14 +29,14 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${orbitron.variable} ${exo2.variable} ${gentium.variable}`}
     >
-      <Head>
+      <head>
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358243501215789"
           crossOrigin="anonymous"
           strategy="lazyOnload"
         />
-      </Head>
+      </head>
       <body className="flex flex-col min-h-screen bg-">
         <Analytics />
         <header className="px-4 py-3 mx-auto">
