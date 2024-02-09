@@ -18,7 +18,7 @@ function parsePageParams(paramValue) {
 
 export default async function ReviewsPage({ searchParams }) {
   const page = parsePageParams(searchParams.page);
-  const reviews = await getPagedReviews(page, 5);
+  const reviews = await getPagedReviews(page, 7);
   const pageCount = await getPageCount();
   return (
     <>
