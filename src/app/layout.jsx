@@ -23,9 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${orbitron.variable} ${exo2.variable} ${gentium.variable}` }>
-      <Head>
+      <head>
         <meta name="google-adsense-account" content="ca-pub-6358243501215789" />
-      </Head>
+      </head>
       <body className="flex flex-col min-h-screen bg-">
         <Analytics />
         <header className="px-4 py-3 mx-auto">
