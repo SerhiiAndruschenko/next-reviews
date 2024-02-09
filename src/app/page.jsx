@@ -22,6 +22,9 @@ export default async function ReviewsPage({ searchParams }) {
   const pageCount = await getPageCount();
   return (
     <>
+      <div className="home-hero">
+          
+      </div>
       <Heading>Reviews</Heading>
       <ul className="flex flex-col gap-4">
         {reviews.map((review) => (
