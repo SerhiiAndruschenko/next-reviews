@@ -3,6 +3,7 @@ import Heading from "@/src/components/Heading";
 import { getPagedReviews, getPageCount } from "@/lib/reviews";
 import AnimatedElement from "@/src/components/AnimatedElement";
 import Image from "next/image";
+import HomeBanner from "../components/HomeBanner";
 
 // export const dynamic = 'force-dynamic';
 
@@ -22,11 +23,9 @@ export default async function ReviewsPage({ searchParams }) {
   const pageCount = await getPageCount();
   return (
     <>
-      <div className="home-hero">
-          <h1 className="font-medievalSharp">Welcome to Bookworm Haven</h1>
-          <h2 className="font-medievalSharp">Where Stories Live</h2>
-          
-      </div>
+      {page == 1 && (
+          <HomeBanner />
+        )}
       <Heading>Reviews</Heading>
       <ul className="flex flex-col gap-4">
         {reviews.map((review) => (
