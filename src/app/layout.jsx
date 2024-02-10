@@ -10,7 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
-
+import { ThemeProvider } from "../components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,17 +36,19 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358243501215789"
           crossOrigin="anonymous"
           strategy="lazyOnload"
-        /> 
+        />
       </head>
       <body className="flex flex-col min-h-screen bg-">
         <Analytics />
-        <header className="px-4 py-3 mx-auto">
-          <NavBar />
-        </header>
-        <main className="grow px-4 py-14">{children}</main>
-        <footer className="px-4 py-3 text-center text-xs">
-          All Rights Reserved. © 2024
-        </footer>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <header className="px-4 py-3 mx-auto">
+            <NavBar />
+          </header>
+          <main className="grow px-4 py-14">{children}</main>
+          <footer className="px-4 py-3 text-center text-xs">
+            All Rights Reserved. © 2024
+          </footer>
+        </ThemeProvider>
         <SpeedInsights />
       </body>
     </html>

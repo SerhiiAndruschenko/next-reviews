@@ -147,6 +147,8 @@
 .post-card {
     height: 250px;
     overflow: hidden;
+    border:none;
+    border-radius: 10px;;
     @media (max-width:992px){
         height: 230px;
     }
@@ -234,4 +236,58 @@
 		opacity: 1;
 		transform: translateY(0);
 	}
+}
+
+.dark {
+    .pagination {
+        a{
+            color: #fff;
+            &.active{
+                background: rgb(39 42 45);
+            }
+        }
+    }
+    h1, .section-title{
+        color: #fff;
+    }
+    .post-card{
+        background: rgb(39 42 45);
+        *{
+            color: #fff;
+        }
+    }
+    .reviews{
+        *{
+            color: #fff;
+        }
+    }
+    .about-content{
+        *{
+            color: #fff;
+        }
+    }
+    .authors-row{
+        a{
+            background: rgb(39 42 45);
+            span{
+                color: #fff;
+            }
+        }
+    }
+    .author-heading {
+        .author-info {
+            div.text-left {
+                p{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    
+
+    footer{
+        background: #000;
+        color: #fff;
+    }
 }

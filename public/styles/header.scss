@@ -16,6 +16,9 @@ header {
   color: #fff;
   font-size: 20px;
   font-weight: 700;
+  @media (max-width:640px){
+    font-size: 18px;
+  }
 }
 
 
@@ -27,6 +30,12 @@ nav {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  li{
+    display: flex;
+  }
+}
+li.theme-changer {
+  display: flex;
 }
 main {
   max-width: 1300px;

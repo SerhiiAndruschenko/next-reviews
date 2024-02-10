@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeChanger from "./ThemeChanger";
 
 const NavBar = () => {
   return (
@@ -12,6 +13,9 @@ const NavBar = () => {
         </li>
         <li className="font-gentium">
           <Link href={"/about"}>About Us</Link>
+        </li>
+        <li className="theme-changer">
+          <ThemeChanger />
         </li>
       </ul>
     </nav>
