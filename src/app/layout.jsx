@@ -11,6 +11,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
 import { ThemeProvider } from "../components/theme-provider";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
         </ThemeProvider>
         <SpeedInsights />
       </body>
+      <GoogleAnalytics gaId="G-GGW9EBJQSW" />
     </html>
   );
 }
