@@ -21,7 +21,12 @@ export async function generateMetadata({ params: { slug } }) {
 
 export default async function ReviewPage({ params: { slug } }) {
   const review = await getReview(slug);
-
+  const originalDate = new Date(review.date);
+  const formattedDate = originalDate.toLocaleDateString("en-US", {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
   return (
     <>
       <div className="article-head flex flex-col gap-x-9 justify-between items-center mb-9 sm:flex-row">
@@ -47,7 +52,7 @@ export default async function ReviewPage({ params: { slug } }) {
 
           <Heading>{review.title}</Heading>
           <AnimatedElement>
-            <p className="italic font-gentium pb-3">{review.date}</p>
+            <p className="italic font-gentium pb-3">{formattedDate}</p>
             <ShareLinkButton />
           </AnimatedElement>
         </div>
