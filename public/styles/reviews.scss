@@ -112,6 +112,16 @@
             display: none;
         }
     }
+    h4{
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        line-height: 1.3333333;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
 }
 
 .pagination{
