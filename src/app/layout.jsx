@@ -21,8 +21,9 @@ export const metadata = {
       "Bookworm Haven - Uncover Literary Treasures with Insightful Reviews",
     template: "%s | Bookworm Haven",
   },
+  keywords:'bookworm, haven, uncover, literary, treasures, insightful, reviews',
   description:
-    "Welcome to Bookworm Haven, where the magic of literature comes alive through our passionate team of avid readers. Dive into a world of insightful and comprehensive book reviews, as we celebrate the rich tapestry of both established and emerging authors. Our mission is to be your go-to destination for thoughtful and honest reviews, guiding bibliophiles and casual readers alike to discover the next captivating page-turner. Join us on a journey through the diverse realm of literature, and let Bookworm Haven be your trusted companion in exploring the endless possibilities of storytelling.",
+    "Welcome to Bookworm Haven, the premier destination for literature lovers seeking to unlock the magic of storytelling. Our expert team of avid readers delivers insightful book reviews, celebrating a wide spectrum of authors from the well-established to the promising newcomers. At Bookworm Haven, our mission is to guide you, the dedicated bibliophile or casual reader, towards your next enthralling read. Explore thoughtful and honest reviews across diverse genres, as we aim to be your first choice for discovering literary masterpieces. Embark with us on a journey through the captivating world of books, and let Bookworm Haven be your trusted guide in the vast universe of literature. Discover your next page-turner with us!",
 };
 
 export default function RootLayout({ children }) {
