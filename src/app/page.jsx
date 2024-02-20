@@ -26,7 +26,7 @@ export default async function ReviewsPage({ searchParams }) {
       {page == 1 && (
           <HomeBanner />
         )}
-      <Heading>Reviews</Heading>
+      
       <ul className="flex flex-col gap-4">
         {reviews.map((review) => (
           <li key={review.slug}>
