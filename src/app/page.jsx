@@ -34,6 +34,7 @@ export default async function ReviewsPage({ searchParams }) {
               <Link
                 className="flex flex-col items-center sm:flex-row post-card border rounded bg-slate-200 hover:shadow-lg"
                 href={`/reviews/${review.slug}`}
+                title={review.title}
               >
                 <div className="post-card__image" style={{backgroundImage: `url(${review.image}`}}></div>
                 <div className="post-card__content">
@@ -55,7 +56,7 @@ export default async function ReviewsPage({ searchParams }) {
 
       <div className="pagination">
         {page >= 2 && (
-          <Link className="arrow" href={`/?page=${page - 1}`}>
+          <Link className="arrow" href={`/?page=${page - 1}`} title="prev-page">
             &laquo;
           </Link>
         )}
@@ -64,12 +65,13 @@ export default async function ReviewsPage({ searchParams }) {
             className={index + 1 == page ? "active" : ""}
             key={index + 1}
             href={`/?page=${index + 1}`}
+            title={index + 1}
           >
             {index + 1}
           </Link>
         ))}
         {page !== pageCount && (
-          <Link className="arrow" href={`/?page=${page + 1}`}>
+          <Link className="arrow" href={`/?page=${page + 1}`} title="next-page">
             &raquo;
           </Link>
         )}
