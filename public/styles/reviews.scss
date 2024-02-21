@@ -158,7 +158,7 @@
     height: 250px;
     overflow: hidden;
     border:none;
-    border-radius: 10px;;
+    border-radius: 7px;
     @media (max-width:992px){
         height: 230px;
     }
@@ -226,6 +226,7 @@
 .article-head {
     img{
         width: 100%;
+        border-radius: 7px;
     }
     h1{
         color: #000;

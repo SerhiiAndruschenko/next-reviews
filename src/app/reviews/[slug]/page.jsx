@@ -52,7 +52,6 @@ export default async function ReviewPage({ params: { slug } }) {
 
           <Heading>{review.title}</Heading>
           <AnimatedElement>
-            <p className="italic font-gentium pb-3">{formattedDate}</p>
             <ShareLinkButton />
           </AnimatedElement>
         </div>
